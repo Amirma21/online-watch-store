@@ -1,0 +1,20 @@
+:root {
+    --mainBlue: #40ACF1;
+    --transparentBlue: rgba(64, 172, 241, 0.7);
+    --mainWhite: #FFFFFF;
+    --mainBlack: #292F36;
+    --mainGrey: #e0dddd;
+    --mainYellow: #e3b505;
+}
+
+/** REM values to target root element 1REM = 10px */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "vazir";
+    direction: rtl;
+}
+
