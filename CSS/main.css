@@ -1,6 +1,20 @@
+@font-face {
+    font-family: "vazir";
+    src: url(/font/Vazir-Medium-FD-UI.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "vazir";
+    src: url(/font/Vazir-Regular-FD-UI.eot);
+    font-weight: lighter;
+}
+
 :root {
-    --mainBlue: #40ACF1;
-    --transparentBlue: rgba(64, 172, 241, 0.7);
+    --secondPurple: #7f53ac;
+    --mainBlue: #caebff;
+    --mainPurple: #647dee;
+    --transparentBlue: rgba(246, 251, 255, 0.702);
     --mainWhite: #FFFFFF;
     --mainBlack: #292F36;
     --mainGrey: #e0dddd;
@@ -9,12 +23,124 @@
 
 /** REM values to target root element 1REM = 10px */
 
-html {
+/* html {
     font-size: 62.5%;
-}
+} */
 
 body {
     font-family: "vazir";
     direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+/** nav styles */
+
+nav {
+    position: relative;
+    top: 30px;
+    width: 80%;
+    height: 6rem;
+    margin: 0 auto;
+    background: linear-gradient(to right  ,var(--mainPurple), var(--secondPurple));
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 10px 15px;
+    transition: width .5s linear;
+    flex-wrap: nowrap;
+}
+
+.nav-item a {
+    color: var(--mainWhite) !important;
+    font-family: "vazir";
+}
+
+.login-input {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: var(--mainWhite);
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-left: 4px;
+}
+
+.login-input-icon {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    margin-left: 5px;
+    transform: translateY(-4px);
+    animation: dance 0.7s infinite ease-in-out;
+}
+
+@keyframes dance {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-4px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(4px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.login-input a {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.cart-icon {
+    padding: 5px 5px;
+    font-size: 20px;
+    color: var(--mainWhite);
+    border-right: 1px solid var(--mainWhite);
+    cursor: pointer;
+}
+
+.sticky {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 4rem;
+    border-radius: 0%;
+    margin: 0%;
+}
+
+/**End nav styles */
+
+.dynamic-text::after {
+    content: " ";
+    border-left: 3px solid var(--secondPurple);
+    margin-right: 5px;
+    animation: dynamic 0.7s infinite ease-in-out;
+}
+
+@keyframes dynamic {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.dynamic-parent {
+    width: 10rem;
+}
+
+.dynamic-text {
+    color: var(--secondPurple);
+}
+
+.header-text {
+    background-color: var(--mainWhite);
+    box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 5px;
+    border-radius: 20px;
+}
