@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <!-- main css -->
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/media.css">
     <!--CDN font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -19,8 +20,13 @@
 
 <body>
     <!---navbar-->
+
     <nav class="nav align-items-center justify-content-between">
-        <div class="navigation-item d-flex">
+        <div class="backdrop"></div>
+        <div class="navbar-btn-parent">
+            <button class="navbar-btn btn"><i class="fas fa-bars"></i></button>
+        </div>
+        <div class="navigation-item d-flex ">
             <li class="nav-item">
                 <a class="nav-link active" href="#"> خانه</a>
             </li>
@@ -38,28 +44,75 @@
             </li>
         </div>
         <div class="left-side-nav d-flex align-items-center ml-3">
-            <div class="login-input"><i class="fas fa-user login-input-icon"></i><a href="#">ورود به حساب کاربری</a></div>
-            <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
+            <div class="login-input"><i class="fas fa-user login-input-icon"></i><a href="#">ورود به حساب کاربری</a>
+            </div>
+            <div class="cart-icon "><i class="fas fa-shopping-cart"></i></div>
         </div>
-
-    
-
     </nav>
+    <div class="responsive-menu ">
+        <div class="close-menu m-3 "><i class="fas fa-times"></i></div>
+        <h3 class="access-menu text-right">منوی دسترسی</h3>
+        <ul class="responsive-nav ">
+            <li class="text-right p-2 d-flex align-items-center"><i class="fas fa-caret-left"></i><a
+                    href="#">محصولات</a></li>
+            <li class="text-right p-2 d-flex align-items-center"><i class="fas fa-caret-left"></i><a href="#">درباره
+                    ما</a></li>
+            <li class="text-right p-2 d-flex align-items-center"><i class="fas fa-caret-left"></i><a href="#">نظرات</a>
+            </li>
+            <li class="text-right p-2 d-flex align-items-center"><i class="fas fa-caret-left"></i><a href="#">تخفیف ها
+                </a></li>
+            <li class="text-right p-2 d-flex align-items-center"><i class="fas fa-caret-left"></i><a
+                    href="#">پیشنهادات</a></li>
+            <li class="text-right p-2 d-flex align-items-center"><i class="fas fa-caret-left"></i><a href="#">سوالی
+                    دارید؟</a></li>
+
+        </ul>
+    </div>
+
     <!--End of navbar-->
 
     <!--header-->
-    <header class="mt-3 py-5 w-100">
-
+    <header class="py-4 w-100">
         <div class="d-flex justify-content-center align-items-center  w-75 mx-auto p-2 header-text">
-            <h3 class="header-title text-center"><span>تفاوت</span>  را با ما تجربه کنید.</h3>
+            <h3 class="header-title text-center"><span>تفاوت</span> را با ما تجربه کنید.</h3>
             <div class="dynamic-parent">
                 <h3 class="dynamic-text text-right mr-2"></h3>
+            </div>
+        </div>
+        <div class="landing-search container-fluid d-flex align-items-center justify-content-center">
+            <input type="text" placeholder="سرچ کنید...">
+            <div class="search-icon d-flex justify-content-center align-items-center ">
+                <i class="fas fa-search "></i>
+            </div>
+        </div>
+        <div class="introduction row container-fluid mt-3">
+            <div class="col-4 d-flex flex-column align-items-center justify-content-center">
+                <img src="/images/icons8-employee-64 (1).png" class="intro-icon" alt="" srcset="">
+                <h3 class="intro-number my-2">123</h3>
+                <h3 class="intro-text text-center">نیروی کار مجرب</h3>
+            </div>
+            <div class="col-4 d-flex flex-column align-items-center">
+                <img src="/images/icons8-new-store-50.png" class="intro-icon" alt="" srcset="">
+                <h3 class="intro-number my-2">123</h3>
+                <h3 class="intro-text text-center">نیروی کار مجرب</h3>
+            </div>
+            <div class="col-4 d-flex flex-column align-items-center">
+                <img src="/images/icons8-employee-64 (1).png" class="intro-icon" alt="" srcset="">
+                <h3 class="intro-number my-2">123</h3>
+                <h3 class="intro-text text-center">نیروی کار مجرب</h3>
             </div>
         </div>
 
 
 
+
+
+
+
+
     </header>
+
+    <div class="test"></div>
     <!--End header-->
 
 

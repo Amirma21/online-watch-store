@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "vazir";
-    src: url(/font/Vazir-Regular-FD-UI.eot);
+    src: url(/font/Vazir-Medium-FD-UI.eot);
     font-weight: lighter;
 }
 
@@ -29,6 +29,7 @@
 
 body {
     font-family: "vazir";
+    font-weight: lighter;
     direction: rtl;
     display: flex;
     flex-direction: column;
@@ -49,7 +50,20 @@ nav {
     box-shadow: rgba(0, 0, 0, 0.4) 5px 10px 15px;
     transition: width .5s linear;
     flex-wrap: nowrap;
+    z-index: 1;
 }
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    transition:all .8s ease-in-out;
+}
+
 
 .nav-item a {
     color: var(--mainWhite) !important;
@@ -96,6 +110,22 @@ nav {
     font-weight: 300;
 }
 
+.navbar-btn-parent{
+    display: none;
+}
+
+.navbar-btn{
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-right: 5%;
+}
+.navbar-btn i{
+    color: var(--mainWhite);
+    font-size: 1.8rem;
+}
+
 .cart-icon {
     padding: 5px 5px;
     font-size: 20px;
@@ -113,7 +143,71 @@ nav {
     margin: 0%;
 }
 
+.responsive-menu{
+    position: absolute;
+    top: 0%;
+    right: -80%;
+    width: 70%;
+    height: 100vh;
+    background: #292c2e;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+}
+.close-menu i:hover{
+    color: #00B3CD;
+    cursor: pointer;
+
+}
+.access-menu{
+    width: 80%;
+    margin: 0rem auto;
+    color: #00B3CD;
+    font-size: 1.3rem;
+    padding: 1.5rem 0rem;
+    border-bottom: 1px solid var(--mainWhite);
+}
+
+.responsive-nav{
+    list-style: none;
+    padding: 0 1rem;
+}
+
+
+
+
+.responsive-nav li a{
+    color: #FFFFFF;
+    font-family: "vazir" !important;
+    font-weight: 300;
+    text-decoration: none;
+}
+.responsive-nav li a:hover{
+    color: #00B3CD;
+}
+
+.responsive-nav li i{
+    color: #00B3CD;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+   
+    
+}
+
+.close-menu i{
+color: var(--mainWhite);
+font-size: 2rem;
+}
+
 /**End nav styles */
+
+header{
+    width: 100%;
+    height: auto;
+    background:linear-gradient(to top , var(--secondPurple) , var(--mainPurple));
+    margin-top: 3rem;
+    padding:15rem 0 !important;
+    /* clip-path: polygon(100% 0, 100% 95%, 78% 94%, 50% 100%, 21% 95%, 0 95%, 0 0); */
+}
 
 .dynamic-text::after {
     content: " ";
@@ -143,4 +237,64 @@ nav {
     background-color: var(--mainWhite);
     box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 5px;
     border-radius: 20px;
+}
+
+
+.test{
+    width: 100%;
+    height: 100vh;
+}
+
+.landing-search{
+    width: 100%;
+    height: 10rem;
+    position: relative;
+}
+
+
+
+ .landing-search input{
+     width: 25rem;
+     height: 3rem;
+     box-shadow: rgba(255, 249, 249, 0.2) 3px -8px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 5rem;
+} 
+
+
+.search-icon{
+    width: 5rem;
+    height: 3rem;
+    position: absolute;
+    left: calc(50% - 13rem);
+    top: 6rem;
+
+}
+
+.search-icon i{
+    font-size: 20px;
+    color: var(--mainPurple);
+}
+
+.introduction{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.intro-icon{
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover !important;
+}
+
+.intro-number{
+    color: var(--mainGrey);
+    font-size: 18px;
+}
+
+.intro-text{
+    font-size: 16px;
+    color: var(--mainGrey);
 }
