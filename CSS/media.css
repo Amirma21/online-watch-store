@@ -1,0 +1,28 @@
+@media only screen and (max-width: 992px) {
+    .dynamic-text, .header-title {
+        font-size: 20px;
+        margin: 0 ;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation-item {
+        display: none !important;
+    }
+    .navbar-btn-parent {
+        display: block;
+    }
+    .introduction {
+        width: 80%;
+    }
+    .dynamic-text, .header-title {
+        font-size: 15px;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .introduction {
+        width: 100%;
+    }
+}
