@@ -6,13 +6,14 @@
 
 @font-face {
     font-family: "vazir";
-    src: url(/font/Vazir-Medium-FD-UI.eot);
+    src: url(../font/Vazir-Medium-FD-UI.eot);
     font-weight: lighter;
 }
 
 :root {
     --secondPurple: #7f53ac;
     --mainBlue: #caebff;
+    --secondBlue: #00B3CD;
     --mainPurple: #647dee;
     --transparentBlue: rgba(246, 251, 255, 0.702);
     --mainWhite: #FFFFFF;
@@ -141,6 +142,7 @@ nav {
     height: 4rem;
     border-radius: 0%;
     margin: 0%;
+    box-shadow: none;
 }
 
 .responsive-menu{
@@ -154,14 +156,14 @@ nav {
     transition: all 0.5s ease-in-out;
 }
 .close-menu i:hover{
-    color: #00B3CD;
+    color: var(--secondBlue);
     cursor: pointer;
 
 }
 .access-menu{
     width: 80%;
     margin: 0rem auto;
-    color: #00B3CD;
+    color: var(--secondBlue);
     font-size: 1.3rem;
     padding: 1.5rem 0rem;
     border-bottom: 1px solid var(--mainWhite);
@@ -182,11 +184,11 @@ nav {
     text-decoration: none;
 }
 .responsive-nav li a:hover{
-    color: #00B3CD;
+    color: var(--secondBlue);
 }
 
 .responsive-nav li i{
-    color: #00B3CD;
+    color: var(--secondBlue);
     font-size: 1.5rem;
     margin-left: 0.5rem;
    
@@ -298,3 +300,39 @@ header{
     font-size: 16px;
     color: var(--mainGrey);
 }
+
+/** end header style */ 
+
+.bold-text {
+    width:10rem;
+    background-color: var(--mainPurple);
+    color: #FFFFFF;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.feature-icon{
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem auto;
+    border-radius: 50%;
+    background-color:var(--mainPurple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feature-icon i{
+    font-size: 30px;
+    color: var(--mainWhite);
+}
+
+.bold-word{
+    color: var(--secondPurple);
+}
+
+.feature-underline{
+    width: 3rem;
+    height: 0.2rem;
+    margin: 1rem auto;
+    background-color: var(--mainPurple);
+    text-align: center;
+}
+
