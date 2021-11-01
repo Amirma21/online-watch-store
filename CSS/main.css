@@ -335,4 +335,53 @@ header{
     background-color: var(--mainPurple);
     text-align: center;
 }
+/** end of positive section **/
 
+ /** discount section */
+
+ .discount-section{
+     background-color: #F2F2F2	;
+     width: 100%;
+     height: auto;
+ }
+
+ .button-box{
+     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+ }
+
+ .fillter-btn{
+     border: 1px solid var(--secondPurple);
+     background-color: var(--mainWhite);
+     border-radius: 15px;
+     transition: all .3s ease-in-out;
+ }
+ .more-btn{
+     background-color: var(--secondBlue);
+  
+     color: var(--mainWhite);
+     transition: all 0.5s ease-in-out;
+ }
+ .more-btn:hover{
+     background: var(--secondPurple);
+     
+ }
+ .fillter-btn:hover{
+     color: var(--mainWhite);
+     background-color: var(--secondPurple);
+ }
+ .pre-price-number{
+     text-decoration: line-through;
+     color: rgba(0, 0, 0, 0.4);
+ }
+ .circle-discount{
+     width: 1.8rem;
+     height: 1.8rem;
+     background-color: var(--secondBlue);
+     color: var(--mainWhite);
+     border-radius: 50%;
+     font-size: 13px;
+ }
+
+ .current-price{
+     font-size: 15px;
+ }
